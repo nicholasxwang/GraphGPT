@@ -1,32 +1,9 @@
 # GraphGPT
-```
-🚧 WORK IN PROGRESS FOR THIS DOCUMENT
-```
 
-
-```svg
-<svg width="500" height="500" class="m-auto">
-    <line x1="50" y1="50" x2="50" y2="480" style="stroke:black;stroke-width:2"></line>
-    <line x1="30" y1="450" x2="450" y2="450" style="stroke:black;stroke-width:2"></line>
-    <line x1="130" y1="340" x2="400" y2="100" style="stroke:#106e20;stroke-width:4"></line>
-    <line x1="130" y1="100" x2="400" y2="340" style="stroke:#b50202;stroke-width:4"></line>
-    <line x1="265" y1="100" x2="265" y2="450" style="stroke:#8a8686;stroke-width:4"></line>
-    <line x1="50" y1="220" x2="265" y2="220" style="stroke:#8a8686;stroke-width:2;stroke-dasharray:4,4;"></line>
-    <text x="410" y="350" style="font-size:1.2em; font-style: italic;">AD</text>
-    <text x="420" y="90" style="font-size:1.2em; font-style: italic;">SRAS</text>
-    <text x="240" y="80" style="font-size:1.2em; font-style: italic;">LRAS</text>
-    <text x="50" y="40" style="font-size:1.2em; font-style: italic;">PL</text>
-    <text x="400" y="480" style="font-size:1.2em; font-style: italic;">rGDP</text>
-    <circle r="5" cx="265" cy="220" fill="black"></circle>
-    <circle r="5" cx="50" cy="220" fill="black"></circle>
-    <circle r="5" cx="265" cy="450" fill="black"></circle>
-</svg>
-```
-
-GraphGPT is a new machine-learning model tailored for educational purposes emphasizing intuition, logic, and visual presentation. Read the paper [here (link will be added shortly)]().  In this `README.md` file, I will be going over specific details that wasn't mentioned in the paper if you would like to learn more about how GraphGPT works.
+GraphGPT is a new machine-learning model tailored for educational purposes emphasizing intuition, logic, and visual presentation. Read the paper [here (link will be added shortly)]().  In this `README.md` file, I will be going over specific details that weren't mentioned in the paper if you would like to learn more about how GraphGPT works.
 
 **Abstract**
-> In this paper, we introduce GraphGPT, a novel machine-learning approach designed for intuitive, logical, and visual education. GraphGPT is inspired by the observation that scientific graphs help learners visualize concepts, while causal graphs enhance the logic of responses. By combining the masked prediction capabilities of GPT with transform prediction using causal graphs, we can improve explanation accuracy. GraphGPT generates logical steps alongside diagrams, significantly enhancing intuition and visual presentation compared to ChatGPT. Experimental results show that GraphGPT outperforms ChatGPT by 25\% in accuracy for multiple-choice questions. Furthermore, a vast majority of participants in the subjective tests confirmed that GraphGPT surpasses ChatGPT in all four evaluation categories. Many highlighted the diagrams and graphical explanations as key factors, giving GraphGPT a notable intuitive advantage.
+> In this work, we introduce GraphGPT, a novel machine-learning approach designed for intuitive, logical, and visual education. GraphGPT is inspired by the observation that scientific graphs help learners visualize concepts, while causal graphs enhance the logic of responses. By combining the masked prediction capabilities of GPT with transform prediction using causal graphs, we can improve explanation accuracy. GraphGPT generates logical steps alongside diagrams, significantly enhancing intuition and visual presentation compared to ChatGPT. Experimental results show that GraphGPT outperforms ChatGPT by 25\% in accuracy for multiple-choice questions. Furthermore, a vast majority of participants in the subjective tests confirmed that GraphGPT surpasses ChatGPT in all four evaluation categories. Many highlighted the diagrams and graphical explanations as key factors, giving GraphGPT a notable intuitive advantage.
 
 
 ## Why GraphGPT over Text-Based GPTs?
@@ -153,17 +130,36 @@ graph TD
 ```
 
 ### Macroeconomics Graphs
-
-
 #### PPC
+The PPC shows tradeoffs and the opportunity cost between two goods.
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/2c1ada98-b5b4-46c4-80f6-89544aae4d76)
 
 
 #### Supply & Demand
+The Supply/Demand graph relates “Price” to “Quantity,” where the intersection is the current Price and Quantity
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/51887015-f2d5-4fb4-ba13-edb1e8e3684d)
+
+
 #### AD/AS
+AD/AS is a graph relating “Price Level” to “Real GDP” where the current “position” of the country is the intersection of AD and AS
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/0f7f18c5-8adb-4c78-afe1-1be81c53797c)
+
 
 #### Philips Curve
+The Philips Curve is a graph relating "Unemployment" to "Inflation".
+
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/b6805266-bed8-4f73-a5ba-45f48659f392)
+
+
 #### Money Market
+The Philips Curve is a graph relating "Nominal Interest Rate" to "Quantity of Money".
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/a43787d2-1a70-4e88-b806-10068408d8be)
+
+
 #### Loanable Funds
+The Philips Curve is a graph relating "Real Interest Rate" to "Quantity of Loanable Funds".
+![image](https://github.com/nicholasxwang/GraphGPT/assets/80929436/91f44214-3782-4dba-a2c6-60be6fca3587)
+
 
 
 
@@ -198,9 +194,6 @@ What happens to equilibrium quantity and price after an increase in demand?
 > `[NEW "Supply/Demand"]` We use a supply and demand model to model this question.  `[RIGHT "D"]`  `[INCREASE "Price]` `[INCREASE "Quantity"]` As a result of the shift, Price and Quantity both increase.
 
 ## Further Applications to Various Subjects
-```
-🚧 WORK IN PROGRESS
-```
 
 ### 🛒 Microeconomics
 Graphs and Diagrams in Microeconomics include:
@@ -225,13 +218,25 @@ Graphs in Physics include:
 - Force-Displacement
 
 ### 🧪 Chemistry
-wip.
+- Organic Chemistry
+- Lewis Dot Structure
 
 ### $\pi$ Algebra
-wip.
+- Polynomials
+- Sinusoids
+- Trigonometry
+
+### 🌱 Biology
+- Cell Diagrams
+- Plant Diagrams
+- Animal/HUman Body Diagrams
 
 ### $\triangle$ Geometry
-wip.
+- Angle Chasing
+- Similar Triangles
+- Areas
+- Volumes
+- 3D Traversals
 
 ### $\int$ Calculus
 Concepts in Calculus that can be explained visually can be:
@@ -240,3 +245,7 @@ Concepts in Calculus that can be explained visually can be:
 - Differentiation
   - Relationship between multiple degrees of differentiation for the same function
   - Instantaneous Slope
+
+### 🌍 History
+- Timelines
+- Flowcharts
